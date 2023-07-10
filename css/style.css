@@ -1,0 +1,234 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+body {
+  line-height: 1;
+  font-family: "Montserrat";
+  font-size: 16px;
+}
+[class*="__container"] {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.page {
+  flex: 1 1 auto;
+}
+/*-------------------------header------------------------*/
+.header {
+  padding-top: 50px;
+  padding-right: 160px;
+  padding-left: 160px;
+  position: sticky;
+  width: 100%;
+}
+.header__container {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #cddadd;
+  border: 16px solid #e6ecee;
+  border-radius: 3px;
+  max-width: 960px;
+}
+.header__info {
+  padding-left: 16px;
+  margin-right: 90px;
+}
+.header__name {
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(82, 4, 4);
+  line-height: 2;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+.header__profession {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(9, 82, 3);
+  margin-bottom: 35px;
+}
+.header__text {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(5, 19, 207);
+}
+/*---------------------------contacts---------------------*/
+.resume {
+  padding-top: 520px;
+  margin-top: -430px;
+}
+.resume__container {
+  display: flex;
+  justify-content: space-between;
+}
+.resume__contacts {
+  padding-top: 560px;
+  margin-top: -520px;
+  padding-left: 16px;
+  background: #26253f;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 1 35%;
+}
+.contacts__location {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.contacts__place {
+  color: rgb(238, 222, 129);
+  font-size: 20px;
+}
+.contacts__phone {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  margin-left: -61px;
+}
+.contacts__number {
+  font-size: 20px;
+}
+.contacts__link {
+  color: rgb(240, 220, 109);
+}
+.contacts__mail {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 52px;
+  margin-left: -52px;
+}
+.contacts__addr {
+  font-size: 20px;
+}
+.contacts__scills {
+  margin-top: 60px;
+  padding-bottom: 241px;
+}
+.contacts__title {
+  font-size: 24px;
+  font-weight: 500;
+  color: rgb(240, 220, 109);
+  text-transform: uppercase;
+  margin-bottom: 43px;
+}
+.contacts__list {
+  padding-left: 25px;
+}
+.contacts__item {
+  font-size: 22px;
+  font-weight: 500;
+  color: #fff;
+}
+.contacts__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+.contacts__link:hover {
+  text-decoration: underline;
+  color: rgb(238, 165, 7);
+}
+/*-------------------------content-----------------------------*/
+.resume__content {
+  padding-top: 560px;
+  margin-top: -520px;
+  background: #d8e69a;
+  height: 100%;
+  flex: 0 1 65%;
+  align-items: center;
+}
+.content__education {
+  padding: 0px 16px;
+  margin-bottom: 60px;
+}
+.content__title {
+  font-size: 22px;
+  font-weight: 500;
+  color: #000;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.content__education p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(17, 8, 150);
+  margin-bottom: 25px;
+}
+.content__projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 80px;
+  row-gap: 50px;
+  flex-wrap: wrap;
+  padding-left: 52px;
+  padding-right: 34px;
+  padding-bottom: 70px;
+}
+.content__project {
+  transition: all 0.45s ease 0s;
+}
+.content__project:hover {
+  transform: scale(1.05);
+}
+@media (max-width: 943.98px) {
+  .header {
+    padding-top: 0;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+  .header__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__info {
+    margin-right: 0;
+    padding-right: 16px;
+  }
+  .resume__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .resume__contacts {
+    padding-top: 560px;
+    margin-top: -560px;
+    width: 100%;
+  }
+  .resume__content {
+    padding-top: 50px;
+    margin-top: 0px;
+  }
+  .contacts__scills {
+    margin-top: 0px;
+    padding-bottom: 52px;
+  }
+}
